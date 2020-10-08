@@ -145,6 +145,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "mirador-demo"
+    }
+  },
+  "defaultProject": "mirador-demo",
+  "cli": {
+    "analytics": false
+  }
 }
