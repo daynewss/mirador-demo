@@ -15,8 +15,9 @@ import miradorDownloadPlugin from 'mirador-dl-plugin/es/MiradorDownloadPlugin';
   styleUrls: ['./viewer-mirador.component.scss']
 })
 export class ViewerMiradorComponent implements OnInit {
-  manifestLink = 'https://digital.library.villanova.edu/Item/vudl:24299/Manifest';
+  // manifestLink = 'https://digital.library.villanova.edu/Item/vudl:24299/Manifest';
   // manifestLink = 'https://purl.stanford.edu/sn904cj3429/iiif/manifest';
+  manifestLink = 'https://iiif.harvardartmuseums.org/manifests/object/299843';
 
   constructor() { }
 
@@ -24,7 +25,7 @@ export class ViewerMiradorComponent implements OnInit {
     this.initMirador();
   }
 
-  initMirador() {
+  initMirador(): void {
     Mirador.viewer(
       {
         annotation: {
